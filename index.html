@@ -75,30 +75,6 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
-  <script>
-    
-var modelo = null;
-
-//Cargar modelo
-(async () => {
-    console.log("Cargando modelo...");
-    modelo = await tf.loadLayersModel("model.json");
-    console.log("Modelo cargado...");
-})();
-
-function cambiarKilogramos() {
-  var Kilogramos = document.getElementById("Kilogramos").value;
-  document.getElementById("lbl-Kilogramos").innerHTML=Kilogramos;
-  if (modelo != null) {
-    var tensor = tf.tensor1d([parseInt(Kilogramos)]);
-    var prediccion = modelo.predict(tensor).dataSync();
-    prediccion = Math.round(prediccion, 1);
-    document.getElementById("resultado").innerHTML = Kilogramos + " Kilogramos son " + prediccion + " Gramos!";
-  } else {
-    document.getElementById("resultado").innerHTML = "Intenta de nuevo en un momento...";
-  }
-}
-  </script>
+  <script src="script.js"></script>
 </body>
-
 </html>
