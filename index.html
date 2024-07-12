@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://avatars.githubusercontent.com/u/93927947?s=400&u=1125bb40d87f80a4746804d5bbcaa2bd8d30f003&v=4">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://avatars.githubusercontent.com/u/93927947?s=400&u=1125bb40d87f80a4746804d5bbcaa2bd8d30f003&v=4">
+  <title>Conversor de Peso</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+</style>
+
+<body>
+  <header class="header text-center py-3">
+    <img class="d-block mx-auto mb-2"
+      src="https://avatars.githubusercontent.com/u/93927947?s=400&u=1125bb40d87f80a4746804d5bbcaa2bd8d30f003&v=4" alt=""
+      width="80" height="80">
+    <h1 class="display-5 fw-bold">Kilogramos a Gramos</h1><br>
+    <p class="lead">Conversión de kilogramos a gramos utilizando TensorFlow.js</p>
+  </header>
+
+  <main class="container">
+    <div class="row justify-content-center">
+      <div class="form-container">
+        <form class="mb-3">
+          <div class="mb-3">
+            <label for="Kilogramos" class="form-label"> Kilogramos: <span id="lbl-Kilogramos">0</span></label>
+            <input type="number" class="form-control" min="0" id="Kilogramos" oninput="cambiarKilogramos();">
+            <div class="form-text">Coloca el valor del peso en Kilogramos</div>
+          </div>
+        </form>
+        <div>
+          <label for="Kilogramos" class="form-label">Resultado: </label>
+          <div id="resultado">
+            <p>0 Kilogramos son 0 Gramos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer lead px-4 py-2 text-center">
+    <div class="py-2">
+      <h4 class="display-5 fw-bold text-white">Brithey.S (●-●)</h4>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">Revisa mi <a href="https://github.com/Brithn">Github</a> para encontrar códigos de
+          inteligencia artificial, programación, etc.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

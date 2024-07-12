@@ -1,0 +1,43 @@
+body {
+  background-color: #f8f9fa;
+}
+
+#resultado {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.header,
+.footer {
+  background-color: #000102;
+  color: white;
+}
+
+.header h1,
+.footer h1 {
+  margin: 0;
+}
+
+.lead {
+  color: #6c757d;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-range {
+  background-color: #e9ecef;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+img {
+  border-radius: 50%;
+}
