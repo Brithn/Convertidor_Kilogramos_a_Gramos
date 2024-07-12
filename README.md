@@ -1,11 +1,8 @@
 # Kilogramos a Gramos
-
-Este código fuente sirve como apoyo para el video de exportación de modelos de Tensorflow a Tensorflow.js, del canal de YouTube [Ringa Tech](https://youtube.com/RingaTech).
-
 Se trata de un conversor en tiempo real de kilogramos a gramos utilizando Tensorflow.js, basado en un modelo entrenado en Python con Tensorflow.
 
 ## Probar en vivo
-Puedes probar este proyecto en vivo [aquí](https://brithn.github.io/Convertidor_Kilogramos_a_Gramos/).
+Puedes probar este proyecto en vivo [aquí](https://brithn.github.io/Convertidor_Kilogramos_a_Gramos/?).
 
 ## Cómo utilizarlo
 
