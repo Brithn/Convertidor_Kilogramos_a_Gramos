@@ -5,7 +5,7 @@ var modelo = null;
 (async () => {
     try {
         console.log("Cargando modelo...");
-        modelo = await tf.loadLayersModel("model.json");
+        modelo = await tf.loadLayersModel("https://brithn.github.io/Convertidor_Kilogramos_a_Gramos/model.json");
         console.log("Modelo cargado...");
     } catch (error) {
         console.error("Error cargando el modelo:", error);
